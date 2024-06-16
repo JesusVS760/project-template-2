@@ -47,3 +47,33 @@
 .header-donate button img {
   width: 20px;
 }
+.landing-gallary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin-top: -70px;
+}
+.gallary-img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.gallary-img p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.gallary-img img {
+  width: 100%;
+  max-width: 325px;
+  height: auto;
+}
+.img-phrase {
+  background: white;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
