@@ -90,13 +90,12 @@
 .landing-causes {
   margin: 75px 100px;
   padding: 15px;
-  border: 2px solid #f7c331;
+  /* border: 2px solid #f7c331; */
   border-radius: 10px;
   background: transparent; /* Initial background color */
-  transition: background-color 0.3s ease; /* Smooth transition for background-color */
 }
 
-.landing-causes:hover {
+/* .landing-causes:hover {
   background: rgb(247, 195, 49);
   color: white;
   background: radial-gradient(
@@ -104,7 +103,7 @@
     rgba(247, 195, 49, 1) 58%,
     rgba(247, 136, 47, 1) 100%
   );
-}
+} */
 .causes-stats {
   max-width: 700px;
   margin: 0 auto;
@@ -123,7 +122,46 @@
   padding: 15px;
   /* background: gray; */
   gap: 25px;
+  /* border: 1px solid black; */
+  border: 1.2px solid var(--org);
 }
+
+.stats-content button {
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.stats-content button:hover {
+  background: transparent;
+  color: black;
+}
+.stats-content:nth-child(2) {
+  border: 1.2px solid #f7c331;
+}
+.stats-content:nth-child(1) button {
+  border: none;
+  padding: 10px 15px;
+  background-color: var(--org);
+  color: white;
+}
+.stats-content:nth-child(2) button {
+  border: none;
+  padding: 10px 15px;
+  background-color: #f7c331;
+  color: white;
+  cursor: pointer;
+}
+.stats-content:nth-child(3) button {
+  border: none;
+  padding: 10px 15px;
+  background-color: #6b7a8f;
+  color: white;
+}
+.stats-content:nth-child(3) {
+  border: 1.2px solid #6b7a8f;
+}
+
 .stats-content img {
   width: 125px;
 }
@@ -132,13 +170,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .landing-mission {
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
-  background-color: #6b7a8f;
+  /* background-color: #6b7a8f; */
   width: 90vw;
   border-radius: 25px;
   height: 100%;
@@ -157,7 +195,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
   max-width: 900px;
 }
 
@@ -186,4 +224,41 @@
 }
 .mission-content p {
   line-height: 1.6;
+}
+.stats-para {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.founder-video video {
+  max-width: 500px;
+}
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 550px;
+}
+.landing-founder {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 55px;
+}
+.founder-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.founder-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.founder-background p {
+  max-width: 600px;
 }

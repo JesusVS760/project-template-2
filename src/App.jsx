@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import arrow from "./assets/images/arrow.png";
 import teen from "./assets/images/teen.jpg";
@@ -8,8 +8,19 @@ import idea from "./assets/images/idea.png";
 import mental from "./assets/images/mental.png";
 import rate from "./assets/images/rate.png";
 import sad from "./assets/images/sad.jpg";
+import video from "./assets/images/founder.mp4";
 import "./App.css";
 const App = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
+    }
+  }, []);
+
   return (
     <div className="app-container">
       <Navbar />
@@ -72,9 +83,10 @@ const App = () => {
                 Preventing dropout rates through mentorship and academic support
                 programs.
               </p>
+              <button>Read More.</button>
             </div>
           </div>
-          <div className="stats-content">
+          <div className="stats-content ">
             <img src={mental} alt="" />
             <div className="stats-para">
               <h3>Mental Health and Counseling</h3>
@@ -82,6 +94,7 @@ const App = () => {
                 Early intervention and awareness programs to prevent mental
                 health crises.
               </p>
+              <button>Read More.</button>
             </div>
           </div>
           <div className="stats-content">
@@ -92,6 +105,7 @@ const App = () => {
                 Offering life skills education and leadership development to
                 prevent future challenges.
               </p>
+              <button>Read More.</button>
             </div>
           </div>
         </div>
@@ -130,6 +144,41 @@ const App = () => {
             </p>
             <button>Read more!</button>
           </div>
+        </div>
+      </div>
+      <div className="landing-founder">
+        <div className="founder-header">
+          <h2>Meet the Founder - John Smith</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="founder-content">
+          <div className="founder-video">
+            <video ref={videoRef} src={video} autoPlay muted loop></video>
+          </div>
+          <div className="founder-background">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vel libero sem. Donec id diam vitae eros ultricies porta. Cras
+              ullamcorper efficitur nisi, nec dictum justo eleifend id. Sed eget
+              consectetur dui. Sed vitae neque eget mi rutrum malesuada. Nullam
+              ultrices efficitur lorem, ut feugiat dolor bibendum vel.
+              Suspendisse potenti. In hac habitasse platea dictumst. Integer
+              tempus, nisi vel molestie vehicula, leo dui venenatis ipsum, a
+              euismod mi eros at quam. Sed vehicula rutrum congue. Vivamus
+              consequat efficitur libero, id posuere quam congue in. Duis
+              tincidunt lacinia felis ac suscipit. Nulla facilisi. Nunc vitae
+              justo a ante sagittis tempor. Cras ullamcorper efficitur nisi, nec
+              dictum justo eleifend id. Sed eget consectetur dui. Sed vitae
+              neque eget mi rutrum malesuada. Nullam ultrices efficitur lorem,
+              ut feugiat dolor bibendum vel. Suspendisse potenti. In hac
+              habitasse platea dictumst. Integer tempus, nisi vel molestie
+              vehicula, leo dui venenatis ipsum, a euismod mi eros at quam. Sed
+              vehicula rutrum congue.
+            </p>
+          </div>
+        </div>
+        <div className="join">
+          <button>My Blog!</button>
         </div>
       </div>
     </div>
