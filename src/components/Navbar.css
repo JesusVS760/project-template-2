@@ -1,0 +1,17 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+nav a {
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+nav a:hover {
+  color: var(--org);
+}
+nav {
+  display: flex;
+  gap: 50px;
+}

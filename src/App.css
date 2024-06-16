@@ -1,0 +1,49 @@
+.landing {
+  background-image: url("./assets/images/group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-weight: 700;
+  max-width: 600px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.header-title {
+  font-size: 1.5rem;
+}
+.header-donate button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 15px;
+  background: var(--org);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.header-donate button:hover {
+  background: transparent;
+  color: whtie;
+  border: 2px solid var(--org);
+  font-size: 1rem;
+}
+.header-donate button img {
+  width: 20px;
+}

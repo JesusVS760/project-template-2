@@ -1,0 +1,15 @@
+.donation-container button {
+  padding: 15px 25px;
+  background: var(--org);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.donation-container button:hover {
+  background: transparent;
+  color: var(--org);
+  border: 1px solid var(--org);
+}
