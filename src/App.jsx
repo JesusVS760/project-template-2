@@ -7,6 +7,7 @@ import teen3 from "./assets/images/teen3.jpg";
 import idea from "./assets/images/idea.png";
 import mental from "./assets/images/mental.png";
 import rate from "./assets/images/rate.png";
+import sad from "./assets/images/sad.jpg";
 import "./App.css";
 const App = () => {
   return (
@@ -92,6 +93,42 @@ const App = () => {
                 prevent future challenges.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="landing-mission">
+        <div className="founder-mission">
+          <h1>Our Vision</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="mission-content-img">
+          <div className="mission-img">
+            <img src={sad} alt="" />
+          </div>
+          <div className="mission-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vel libero sem. Donec id diam vitae eros ultricies porta. Cras
+              ullamcorper efficitur nisi, nec dictum justo eleifend id. Sed eget
+              consectetur dui. Sed vitae neque eget mi rutrum malesuada. Nullam
+              ultrices efficitur lorem, ut feugiat dolor bibendum vel.
+              Suspendisse potenti. In hac habitasse platea dictumst. Integer
+              tempus, nisi vel molestie vehicula, leo dui venenatis ipsum, a
+              euismod mi eros at quam. Sed vehicula rutrum congue. Vivamus
+              consequat efficitur libero, id posuere quam congue in. Duis
+              tincidunt lacinia felis ac suscipit. Nulla facilisi. Nunc vitae
+              justo a ante sagittis tempor. Nunc egestas, mi nec mollis
+              bibendum, nunc eros efficitur nunc, eget dictum nisi nunc non mi.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vel libero sem. Donec id diam vitae eros ultricies porta. Cras
+              ullamcorper efficitur nisi, nec dictum justo eleifend id. Sed eget
+              consectetur dui. Sed vitae neque eget mi rutrum malesuada. Nullam
+              ultrices efficitur lorem, ut feugiat dolor bibendum vel.
+              Suspendisse potenti. In hac habitasse platea dictumst. Integer
+              tempus, nisi vel molestie vehicula, leo dui venenatis ipsum, a
+              euismod mi eros at quam. Sed vehicula rutrum congue.
+            </p>
+            <button>Read more!</button>
           </div>
         </div>
       </div>
