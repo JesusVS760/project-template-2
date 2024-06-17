@@ -130,8 +130,11 @@
   border: 1.2px solid var(--org);
   color: white;
   border-radius: 25px;
+  transition: filter 0.3s ease; /* Smooth transition */
 }
-
+.stats-content:hover {
+  filter: brightness(0.6); /* Darker effect on hover */
+}
 .stats-content button {
   cursor: pointer;
   border-radius: 5px;
@@ -249,6 +252,8 @@
   line-height: 1.6;
 }
 .stats-para {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   display: flex;
   align-items: start;
   justify-content: center;
@@ -281,6 +286,7 @@ video {
   justify-content: center;
   flex-direction: column;
   padding: 25px 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .founder-content {
   display: flex;

@@ -10,6 +10,7 @@ import rate from "./assets/images/rate.png";
 import sad from "./assets/images/sad.jpg";
 import video from "./assets/images/founder.mp4";
 import "./App.css";
+import Footer from "./components/Footer";
 const App = () => {
   const videoRef = useRef(null);
 
@@ -181,6 +182,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
