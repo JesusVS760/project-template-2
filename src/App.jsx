@@ -11,6 +11,7 @@ import sad from "./assets/images/sad.jpg";
 import video from "./assets/images/founder.mp4";
 import "./App.css";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 const App = () => {
   const videoRef = useRef(null);
 
@@ -182,6 +183,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Contact />
       <Footer />
     </div>
   );

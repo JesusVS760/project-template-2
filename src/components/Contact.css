@@ -1,0 +1,92 @@
+.contact-page {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form,
+.contact-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 20px;
+  min-width: 300px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--org);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: darkorange;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.contact-info .social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--org);
+  text-decoration: none;
+}
+
+.contact-info .social-media a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
