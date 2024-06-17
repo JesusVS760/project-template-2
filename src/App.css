@@ -86,6 +86,10 @@
   margin: 0px auto;
   max-width: 700px;
   font-size: 1rem;
+  margin-bottom: 25px;
+}
+.causes-header h1 {
+  margin-bottom: 15px;
 }
 .landing-causes {
   margin: 75px 100px;
@@ -124,6 +128,8 @@
   gap: 25px;
   /* border: 1px solid black; */
   border: 1.2px solid var(--org);
+  color: white;
+  border-radius: 25px;
 }
 
 .stats-content button {
@@ -137,8 +143,26 @@
   color: black;
 }
 .stats-content:nth-child(2) {
-  border: 1.2px solid #f7c331;
 }
+.stats-content:nth-child(1) {
+  background-image: url("./assets/images/education.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.stats-content:nth-child(2) {
+  background-image: url("./assets/images/counseling.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.stats-content:nth-child(3) {
+  background-image: url("./assets/images/personal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .stats-content:nth-child(1) button {
   border: none;
   padding: 10px 15px;
@@ -158,15 +182,13 @@
   background-color: #6b7a8f;
   color: white;
 }
-.stats-content:nth-child(3) {
-  border: 1.2px solid #6b7a8f;
-}
 
 .stats-content img {
   width: 125px;
 }
 .mission-img img {
   width: 300px;
+  border: 2px solid #6b7a8f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .landing-mission {
@@ -182,6 +204,7 @@
   height: 100%;
   padding: 25px;
   margin: 0px auto;
+  border: 2px solid #f7c331;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 .founder-mission {
@@ -195,7 +218,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 75px;
   max-width: 900px;
 }
 
@@ -241,24 +264,47 @@ video {
   min-width: 550px;
 }
 .landing-founder {
+  color: white;
+  padding: 35px 25px;
   display: flex;
+  border-radius: 15px;
   align-self: center;
   justify-content: center;
   flex-direction: column;
   margin: 100px 55px;
+  background-color: #6b7a8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .founder-header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 25px 0px;
 }
 .founder-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
   gap: 50px;
 }
 .founder-background p {
-  max-width: 600px;
+  max-width: 650px;
+  line-height: 1.6;
+}
+.join button {
+  margin-top: 15px;
+  padding: 15px 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: var(--org);
 }

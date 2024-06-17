@@ -175,10 +175,10 @@ const App = () => {
               vehicula, leo dui venenatis ipsum, a euismod mi eros at quam. Sed
               vehicula rutrum congue.
             </p>
+            <div className="join">
+              <button>My Blog!</button>
+            </div>
           </div>
-        </div>
-        <div className="join">
-          <button>My Blog!</button>
         </div>
       </div>
     </div>
