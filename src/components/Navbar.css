@@ -15,3 +15,6 @@ nav {
   display: flex;
   gap: 50px;
 }
+.nav-logo img {
+  width: 150px;
+}

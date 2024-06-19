@@ -10,6 +10,10 @@ import rate from "./assets/images/rate.png";
 import sad from "./assets/images/sad.jpg";
 import video from "./assets/images/founder.mp4";
 import "./App.css";
+import student from "./assets/images/student.jpg";
+import student2 from "./assets/images/student2.jpg";
+import student3 from "./assets/images/student3.jpg";
+import mission from "./assets/images/mission.jpg";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 const App = () => {
@@ -112,6 +116,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className="landing-mission">
         <div className="founder-mission">
           <h1>Our Vision</h1>
@@ -119,7 +124,9 @@ const App = () => {
         </div>
         <div className="mission-content-img">
           <div className="mission-img">
-            <img src={sad} alt="" />
+            <img className="mission-img-1" src={student} alt="" />
+            <img className="mission-img-1" src={student2} alt="" />
+            <img className="mission-img-1" src={student3} alt="" />
           </div>
           <div className="mission-content">
             <p>
@@ -148,6 +155,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className="landing-founder">
         <div className="founder-header">
           <h2>Meet the Founder - John Smith</h2>

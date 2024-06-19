@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import Donation from "./Donation";
-
+import logo from "../assets/images/logo.png";
 const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="nav-logo">
-        <h2>Youth Empowerment</h2>
+        <img src={logo} alt="" />{" "}
       </div>
       <nav>
         <div className="">
